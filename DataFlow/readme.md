@@ -12,10 +12,33 @@ Utilizando **C#** e **.NET MAUI**, o sistema oferece uma aplicação gráfica **
 
 ---
 
+
 ### 🧱 Estrutura do Projeto
 
 ```
 Data-Flow/
+├── Application/
+│   ├── Interfaces/
+│   │   ├── IDataFlowService.cs
+│   │   ├── ISiteRepository.cs
+│   ├── Services/
+│   │   └── ColetaService.cs
+│
+├── Domain/
+│   ├── Entities/
+│   │   └── DataFlowEntity.cs
+│
+├── Infrastructure/
+│   ├── Http/
+│   │   └── HttpClientFactory.cs (opcional)
+│   ├── Scraping/
+│   │   └── HtmlAgilityScrapingService.cs
+│   ├── Data/
+│   │   ├── Db/
+│   │   │   └── app.db
+│   │   └── Repositories/
+│   │       └── SiteRepository.cs
+│
 ├── bin/                        # arquivos compilados pelo .NET
 ├── obj/                        # metadados e cache de build
 ├── Components/                 # Componentes reutilizaveis
@@ -29,9 +52,6 @@ Data-Flow/
 │   ├── Fonts/                  # fontes customizadas
 │   ├── Styles/                 # estilos globais (XAML)
 │   └── Raw/                    # arquivos brutos, modelos e DTOs
-├── Services/
-│   ├── Iterfaces/                 # Interfaces (contratos)
-│   ├── Implementations/           # Implementações
 ├── App.xaml                    # configuração global da aplicação
 ├── App.xaml.cs
 ├── MauiProgram.cs              # bootstrap / DI / configuração do app
