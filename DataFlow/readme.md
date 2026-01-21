@@ -3,7 +3,7 @@
 
 O **Data-Flow do PMCRP** É uma ferramenta que nasceu da necessidade de automatizar e gerenciar a **coleta**, o **tratamento** e a **carga** (ETL) de diversas fontes de dados públicos, como **ANP**, **TCEs**, **portais de transparência municipais**, entre outros, de forma **moderna**, **multiplataforma** e com uma **interface visual amigável e interativa**.
 
-A proposta metodológica do projeto é baseada em uma arquitetura **MVVM modular**, inspirada em práticas de **Data Harvesting**, com forte foco em **experiência do usuário**, **escalabilidade** e **manutenibilidade**.
+A proposta metodológica do projeto é baseada em uma arquitetura **MVVM e arquitetura limpa**, inspirada em práticas de **Coleta de dados**, com o foco na interação e **experiência do usuário**, **escalabilidade** e **manutenibilidade**.
 
 Utilizando **C#** e **.NET MAUI**, o sistema oferece uma aplicação gráfica **cross-platform** (Windows, Android, macOS e iOS) para gerenciamento do pipeline de dados, permitindo que o ETL seja **interativo**, **robusto**, **organizado por módulos** e **fácil de estender**.
 
@@ -18,26 +18,12 @@ Utilizando **C#** e **.NET MAUI**, o sistema oferece uma aplicação gráfica **
 ```
 Data-Flow/
 ├── Application/
-│   ├── Interfaces/
-│   │   ├── IDataFlowService.cs
-│   │   ├── ISiteRepository.cs
-│   ├── Services/
-│   │   └── ColetaService.cs
 │
 ├── Domain/
-│   ├── Entities/
-│   │   └── DataFlowEntity.cs
+│   ├── Collectors.cs
+│   └── Sites.cs
 │
-├── Infrastructure/
-│   ├── Http/
-│   │   └── HttpClientFactory.cs (opcional)
-│   ├── Scraping/
-│   │   └── HtmlAgilityScrapingService.cs
-│   ├── Data/
-│   │   ├── Db/
-│   │   │   └── app.db
-│   │   └── Repositories/
-│   │       └── SiteRepository.cs
+├── Infra/
 │
 ├── bin/                        # arquivos compilados pelo .NET
 ├── obj/                        # metadados e cache de build
