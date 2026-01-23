@@ -1,8 +1,5 @@
-﻿@using DataFlow.Services.Implementations
-@using Sprache
-@using Windows.Media.Capture.Core
-@inject DataFlowServices DataFlowServices
-
+﻿@using Sprache
+@using Domain.Entities
 @page "/Coleta"
 
 <h1 class="text-center">Coleta de Dados</h1>
@@ -27,9 +24,5 @@
 
   @code {
      
-     private async Task ColetarDados()
-     {
-      await DataFlowServices.DataFlowGetPageResource();  
-     }
 
   }

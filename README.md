@@ -17,11 +17,11 @@ Utilizando **C#** e **.NET MAUI**, o sistema oferece uma aplicação gráfica **
 
 ```
 Data-Flow/
-├── Application/
-│
+├── Core/                       #Camada Application
+│   ├── Dtos
+│   └── Interfaces
 ├── Domain/
-│   ├── Collectors.cs
-│   └── Sites.cs
+│   └── Entities                # Entidades da aplicação
 │
 ├── Infra/
 │
