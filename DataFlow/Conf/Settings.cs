@@ -1,5 +1,5 @@
 using DotNetEnv;
-namespace DataFlow.Conf.Settings;
+namespace Conf.Settings;
 
 
 public class Settings

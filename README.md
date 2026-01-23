@@ -18,7 +18,9 @@ Utilizando **C#** e **.NET MAUI**, o sistema oferece uma aplicação gráfica **
 ```
 Data-Flow/
 ├── Core/                       #Camada Application
-│   ├── Dtos
+│   ├── DTOs
+│   │  │── Collectors
+│   │  └── Sites
 │   └── Interfaces
 ├── Domain/
 │   └── Entities                # Entidades da aplicação

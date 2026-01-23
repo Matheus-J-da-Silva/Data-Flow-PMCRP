@@ -1,6 +1,6 @@
-namespace Core.Dtos
+namespace Core.DTOs.Sites
 {
-    public class UpdateSite
+    public class CreateSite
     {
         public Guid Id{get;set;}
         public string ?Name{get;set;}

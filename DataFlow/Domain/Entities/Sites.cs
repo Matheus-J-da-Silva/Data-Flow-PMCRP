@@ -1,7 +1,7 @@
 namespace Domain.Entities
 
 {
-    public class SiteEntities
+    public class Sites
     {
         
         Guid Id {get;set;}

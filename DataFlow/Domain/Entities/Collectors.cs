@@ -1,13 +1,13 @@
 ﻿namespace Domain.Entities
 {
 
-public class CollectorEntities
+public class Collectors
 {
-Guid Id {get;set;}
-int SiteId {get;set;}
-DateTime StartedAt {get;set;}
-DateTime FinishedAt {get;set;}
-enum Status{NaoIniciado,EmAndamento,Sucesso}
+public Guid Id {get;set;}
+public int SiteId {get;set;}
+public DateTime StartedAt {get;set;}
+public DateTime FinishedAt {get;set;}
+public enum Status {NaoIniciado,EmAndamento,Sucesso}
 
 } 
 }
