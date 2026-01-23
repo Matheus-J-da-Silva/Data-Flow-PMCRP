@@ -1,10 +1,18 @@
 ﻿
+using System.ComponentModel.Design;
+using Domain.Entities;
+
 namespace interfaces{
 
 public interface ISiteRepository
 {
-
-    public void AddSite(string name, string link );
+    Task<Sites> ViewSitesAsync(string Name);
+    Task<Sites>DeleteSistesAsync(string Name);
+    Task<Sites>UpdateSite(string Name, string Link, bool Active);
+    Task<Sites>CreateSite(string Name, string Link);
+    Task<IEnumerable<Sites>>ListAllSitesAsync();
     
+}
 
-}}
+
+}
