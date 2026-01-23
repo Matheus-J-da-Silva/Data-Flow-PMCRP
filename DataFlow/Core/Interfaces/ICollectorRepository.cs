@@ -1,7 +1,8 @@
 using Domain.Entities;
 
-namespace interfaces
+namespace Core.interfaces
 {
+    
     
     public interface ICollectorRepository
     {

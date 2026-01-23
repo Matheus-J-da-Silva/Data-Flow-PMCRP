@@ -1,8 +1,6 @@
-﻿
-using System.ComponentModel.Design;
-using Domain.Entities;
+﻿using Domain.Entities;
 
-namespace interfaces{
+namespace Core.interfaces{
 
 public interface ISiteRepository
 {
