@@ -4,11 +4,12 @@ namespace Core.interfaces{
 
 public interface ISiteRepository
 {
-    Task<Sites> ViewSitesAsync(string Name);
-    Task<Sites>DeleteSistesAsync(string Name);
-    Task<Sites>UpdateSite(string Name, string Link, bool Active);
-    Task<Sites>CreateSite(string Name, string Link);
-    Task<IEnumerable<Sites>>ListAllSitesAsync();
+    public Task CreateSite(Sites sites);
+    // Task<Sites> ViewSitesAsync(Sites sites);
+    // Task<Sites>DeleteSistesAsync(Sites sites);
+    // Task<Sites>UpdateSite(Sites sites);
+
+    // Task<IEnumerable<Sites>>ListAllSitesAsync();
     
 }
 
